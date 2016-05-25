@@ -18,6 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "materialize": "^0.97.6"
+    "materialize": "^0.97.6",
+    "angular": "^1.5.5"
   }
 }

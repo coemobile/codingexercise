@@ -12,3 +12,7 @@ p:hover .delete-btn-wrapper {
 p .delete-btn-wrapper:hover {
   color: black;
 }
+
+label.checked {
+  text-decoration: line-through;
+}
