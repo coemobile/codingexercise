@@ -2,6 +2,18 @@
   "name": "codingexercise",
   "version": "0.0.0",
   "private": true,
+  "author": "Patrick Gagnon-Renaud <coding@pgrenaud.com>",
+  "description": "Full Stack Developer Coding Exercise",
+  "main": "app.js",
+  "license": "MIT",
+  "homepage": "https://github.com/pgrenaud/codingexercise",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pgrenaud/codingexercise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pgrenaud/codingexercise/issues"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },
