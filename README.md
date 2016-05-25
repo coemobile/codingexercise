@@ -1,6 +1,38 @@
 # Full Stack Developer Coding Exercise
 A coding exercise to assess the competency of candidates.
 
+## Requirements
+
+* Node.js, `npm` and `bower` installed
+* SQLite3 installed
+
+## Setup
+
+1. Clone this repository
+2. Install the backend dependencies
+
+        npm install
+
+3. Install the frontend dependencies
+
+        bower install
+
+## Usage
+
+Launch the express server:
+
+    DEBUG=codingexercise:* npm start
+
+And open your browser at [http://localhost:3000/](http://localhost:3000/)
+
+## Chosen solution
+
+I develop a simple and easy to use _todo_ list. I made the backend using Node.js, Express and Sequelize (with SQLite3). For the frontend, I choose to design a responsible web application using AngularJS and Materialize.
+
+The required functionalities were implemented as follow: View all todos (list), add a todo (create), check a todo (update) and remove a todo (delete).
+
+The solution could be improved by adding input validation on both the backend and the frontend, and by improving the error handling on the backend side.
+
 ## About us
 Enterprise Mobility Centre Of Excellence at CGI Group inc. is a very competent team that develops high quality and performance mobile, backend and responsive web applications for different clients around the globe.
 
