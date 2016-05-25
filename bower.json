@@ -1,0 +1,23 @@
+{
+  "name": "codingexercise",
+  "version": "0.0.0",
+  "private": true,
+  "authors": [
+    "Patrick Gagnon-Renaud <coding@pgrenaud.com>"
+  ],
+  "description": "Full Stack Developer Coding Exercise",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://github.com/pgrenaud/codingexercise#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.97.6"
+  }
+}
