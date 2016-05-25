@@ -1,0 +1,14 @@
+p .delete-btn-wrapper {
+  float: right;
+  display: none;
+  color: #5a5a5a;
+  cursor: pointer;
+}
+
+p:hover .delete-btn-wrapper {
+  display: inline;
+}
+
+p .delete-btn-wrapper:hover {
+  color: black;
+}

@@ -4,10 +4,52 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <title>To Do</title>
+
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="stylesheets/app.css" media="screen,projection" />
     </head>
-    <body>
+    <body class="grey lighten-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8 offset-m2 l6 offset-l3">
+                    <h1 class="center-align">To Do</h1>
+
+                    <div class="card-panel white">
+                        <p>
+                            <span class="delete-btn-wrapper">
+                                <i class="material-icons">delete</i>
+                            </span>
+                            <input type="checkbox" id="checkbox1" class="filled-in" />
+                            <label for="checkbox1">One</label>
+                        </p>
+                        <p>
+                            <span class="delete-btn-wrapper">
+                                <i class="material-icons">delete</i>
+                            </span>
+                            <input type="checkbox" id="checkbox2" class="filled-in" />
+                            <label for="checkbox2">Two</label>
+                        </p>
+                        <p>
+                            <span class="delete-btn-wrapper">
+                                <i class="material-icons">delete</i>
+                            </span>
+                            <input type="checkbox" id="checkbox3" class="filled-in" />
+                            <label for="checkbox3">Tree</label>
+                        </p>
+                        <p>
+                            <span class="delete-btn-wrapper">
+                                <i class="material-icons">delete</i>
+                            </span>
+                            <input type="checkbox" id="checkbox4" class="filled-in" />
+                            <label for="checkbox4">Stuff</label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.min.js"></script>
     </body>
