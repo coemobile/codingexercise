@@ -1,0 +1,23 @@
+p .delete-btn-wrapper {
+  float: right;
+  display: none;
+  color: #9e9e9e; /* grey 500 */
+  cursor: pointer;
+}
+
+p:hover .delete-btn-wrapper {
+  display: inline;
+}
+
+p .delete-btn-wrapper:hover {
+  color: #424242; /* grey 800 */
+}
+
+label {
+  color: inherit;
+}
+
+label.checked {
+  text-decoration: line-through;
+  color: #9e9e9e; /* grey 500 */
+}
