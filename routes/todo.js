@@ -3,7 +3,9 @@ var router = express.Router();
 var models  = require('../models');
 
 router.get('/', function(req, res) {
-  models.Todo.findAll().then(function(todos) {
+  models.Todo.findAll({
+    order: [['id', 'DESC']]
+  }).then(function(todos) {
     res.json(todos);
   });
 });
