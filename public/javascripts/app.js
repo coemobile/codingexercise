@@ -3,41 +3,40 @@
 var app = angular.module('App', []);
 
 app.controller('TodoController', function($scope, $http) {
-  var qty = 4; // FIXME: Remove this
-
-  $scope.todos = [
-    {
-      id: 1,
-      title: 'One',
-      checked: false
-    },
-    {
-      id: 2,
-      title: 'Two',
-      checked: true
-    },
-    {
-      id: 3,
-      title: 'Tree',
-      checked: false
-    },
-    {
-      id: 4,
-      title: 'Stuff',
-      checked: true
-    }
-  ];
+  $scope.todos = [];
 
   $scope.submit = function() {
-    $scope.todos.unshift({
-      id: ++qty,
-      title: $scope.todo,
-      checked: false
-    });
-    $scope.todo = '';
+    var todo = {
+      title: $scope.todo
+    };
+
+    $http.post('/api/todo', todo)
+      .success(function(data) {
+        $scope.todos.unshift(data);
+        $scope.todo = '';
+      });
+  };
+
+  $scope.update = function(index) {
+    var todo = $scope.todos[index];
+
+    $http.put('/api/todo/' + todo.id, todo)
+      .success(function(data) {
+        $scope.todos[index] = data;
+      });
   };
 
   $scope.delete = function(index) {
-    $scope.todos.splice(index, 1);
+    var todo =  $scope.todos[index];
+
+    $http.delete('/api/todo/' + todo.id)
+      .success(function() {
+        $scope.todos.splice(index, 1);
+      });
   };
+
+  $http.get('/api/todo')
+    .success(function(data) {
+      $scope.todos = data;
+    });
 });

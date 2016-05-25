@@ -25,7 +25,7 @@
                                     <span class="delete-btn-wrapper" ng-click="delete($index)">
                                         <i class="material-icons">delete</i>
                                     </span>
-                                    <input type="checkbox" id="todo-{{ $index }}" ng-model="todo.checked" class="filled-in" />
+                                    <input type="checkbox" id="todo-{{ $index }}" ng-change="update($index)" ng-model="todo.checked" class="filled-in" />
                                     <label for="todo-{{ $index }}" ng-class="{checked: todo.checked}">{{ todo.title }}</label>
                                 </p>
                             </div>
