@@ -1,0 +1,25 @@
+{
+  "name": "Interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://g-harel:0ph3l14@github.com/g-harel/catoctopuschipmunk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g-harel/catoctopuschipmunk/issues"
+  },
+  "homepage": "https://github.com/g-harel/catoctopuschipmunk#readme"
+}

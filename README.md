@@ -1,3 +1,16 @@
+# How to Use
+Short summary of how to use the app.
+![Alt text](http://i.imgur.com/IJxpHsF.png)
+
+## Create
+To create a new task item, enter a description in the big red field and press on the ADD button.
+
+## Delete
+To remove a task item, click on the remove button to the right of each line.
+
+## Update
+To update a task description, double click on the description and edit the contents in the text box. The description will be updated when the textbox looses focus.
+
 # Full Stack Developer Coding Exercise
 A coding exercise to assess the competency of candidates.
 
@@ -9,7 +22,7 @@ Thanks for applying to Full Stack Developer internship position at Enterprise Mo
 
 To be able to find right talents, we recommend candidates to finish the following coding exercise.
 
-Thanks for your collaboration. We are looking forward to have you on board and share a great experience together. 
+Thanks for your collaboration. We are looking forward to have you on board and share a great experience together.
 
 
 ## Coding exercise
@@ -56,4 +69,3 @@ Please take the following into the consideration as much as you can while develo
 - Usability
 - Code quality
 - Design patterns and best practices
-
