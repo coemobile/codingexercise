@@ -11,6 +11,11 @@ To remove a task item, click on the remove button to the right of each line.
 ## Update
 To update a task description, double click on the description and edit the contents in the text box. The description will be updated when the textbox looses focus.
 
+## More Details
+- Front end done using jQuery and vanilla html/css
+- Back end done using Node.js, Express and MongoDB
+
+
 # Full Stack Developer Coding Exercise
 A coding exercise to assess the competency of candidates.
 
