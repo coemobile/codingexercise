@@ -8,12 +8,12 @@ $(function() {
 // outputs an html table from an array of data
 function table(data) {
 	var table = '<table id="table" cellspacing="0">';
-	var data_rows = data.length || 0;
+	var data_rows = data && data.length || 0;
 	// adding columns widths for formatting
 	table += '<colgroup><col width="calc(100%-70px)" /><col width="70px" /></colgroup>'
 	// adding rows of data
 	for (var i = 0; i < data_rows; i++) {
-		table += '<tr data-id="' + (data[i]['id'] || 0) + '"><td>';
+		table += '<tr data-id="' + (data[i]['_id'] || 0) + '"><td>';
 		table += '<div class="editable">' + (data[i]['desc'] || 'error') + '</div>';
 		table += '</td><td><span class="remove">remove</span></td></tr>';
 	}

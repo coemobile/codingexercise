@@ -1,10 +1,12 @@
 {
-  "name": "Interview",
+  "name": "codingexercise",
   "version": "1.0.0",
-  "description": "",
+  "description": "codingexercise",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "mongodb": "^2.1.20"
   },
   "devDependencies": {},
   "scripts": {
@@ -13,13 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://g-harel:0ph3l14@github.com/g-harel/catoctopuschipmunk.git"
+    "url": "git+https://github.com/g-harel/codingexercise.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/g-harel/catoctopuschipmunk/issues"
+    "url": "https://github.com/g-harel/codingexercise/issues"
   },
-  "homepage": "https://github.com/g-harel/catoctopuschipmunk#readme"
+  "homepage": "https://github.com/g-harel/codingexercise#readme"
 }
