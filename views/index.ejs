@@ -18,10 +18,10 @@
 				<div id="table-data">
 					<table class="table" id="data">
 					<% for(var i = 0; i < tasks.length; i++) {%>
-						<tr>
-							<td identifier="<%= tasks[i]._id %>"><%= tasks[i].task %></td>
-							<td class="edit" id="edit<%= i %>" onclick="edit(this.id);">edit</td>
-							<td class="delete" id="delete<%= i %>" onclick="deleteData(this.rowIndex);">delete</td>
+						<tr id="<%= tasks[i]._id %>">
+							<td><%= tasks[i].task %></td>
+							<td id="edit" onclick="edit(this.parentNode);">edit</td>
+							<td id="delete" onclick="deleteData(this.parentNode.id);">delete</td>
 						</tr>
 						<% } %>
 					</table>
@@ -29,7 +29,6 @@
 			</div>
 		</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src='controller.js'></script>
 	</body>
 </html>

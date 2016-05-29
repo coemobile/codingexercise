@@ -53,15 +53,10 @@
   	color: #FFF;
 }
 
-.delete {
+#delete, #edit, #done {
 	text-align: right;
 	cursor: pointer;
-}
-
-.edit {
-	text-align: right;
-	cursor: pointer;
-	width: 90%;
+	width: 5%;
 }
 
 table {
@@ -69,4 +64,8 @@ table {
 }
 tr {
 	width: 90%;
+}
+
+.hidden {
+	display: none;
 }
