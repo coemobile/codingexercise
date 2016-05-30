@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<link href='main.css' rel='stylesheet' type='text/css' />
+		<title>Todo List</title>
+	</head>
+	<body>
+		<div class="container-fluid col-xs-offset-3 col-xs-6">
+			<div id="new">
+				<input id="input-field" type="text" name="task">
+				<div id="add-button" onclick="add();"><span>+</span></div>
+				<div id="table-data">
+					<table class="table" id="data">
+					<% for(var i = 0; i < tasks.length; i++) {%>
+						<tr id="<%= tasks[i]._id %>">
+							<td><%= tasks[i].task %></td>
+							<td id="edit" onclick="edit(this.parentNode);">edit</td>
+							<td id="delete" onclick="deleteData(this.parentNode.id);">delete</td>
+						</tr>
+						<% } %>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<script src='controller.js'></script>
+	</body>
+</html>

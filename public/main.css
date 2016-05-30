@@ -1,0 +1,71 @@
+#main {
+	width: 50%;
+	margin: auto;
+}
+
+#new {
+	background: #efeff5;
+	padding-left: 15px;
+
+}
+
+#input-field {
+	margin-top: 10px;
+	float: left;
+	height: 20px;
+	width: 90%;
+	padding-right: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 4px;
+	border: 2px solid grey;
+	background-color: #424242;
+	color: #fff;
+}
+
+#input-field:focus {
+	outline: none;
+}
+
+#add-button {
+	margin-top: 11px;
+	margin-left: 8px;
+	background-color: #37474F;
+  	border-radius: 999em;
+  	width: 20px;
+  	height: 20px;
+  	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  	line-height: 1;
+  	font-size: 16px;
+  	position: relative;
+  	cursor: pointer;
+  	display: inline-block;
+}
+
+#add-button span {
+	position: absolute;
+  	left: 0;
+  	top: 50%;
+  	height: 100%;
+  	width: 100%;
+  	text-align: center;
+  	margin-top: -10px;
+  	color: #FFF;
+}
+
+#delete, #edit, #done {
+	text-align: right;
+	cursor: pointer;
+	width: 5%;
+}
+
+table {
+	width: 100%;
+}
+tr {
+	width: 90%;
+}
+
+.hidden {
+	display: none;
+}
